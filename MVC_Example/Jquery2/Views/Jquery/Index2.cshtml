@@ -1,0 +1,107 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/images/ui-icons_444444_256x240.png"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger;
+            var Array1 = [100, 200, 300, 400];
+            var Result = [];
+            //$.each(Array1, function (index,element) {
+            //    Result += 'Index =' + index + ', Element' + element+'<br />' ;
+
+            //});
+            //$('li').each(function (index, element) {
+            //    Result += 'Index =' + index + ', Element = ' +$(element).text() + '<br />';
+            //});
+
+            //$('li').each(function (index,element) {
+
+            //    Result.push($(element).text());
+            //});
+            //alert(Result);
+            //$('#jag').html(Result);
+            //---- Change Dropdown value function
+            $('#ddl').change(function () {
+                var res = $(this).val();
+                if (res == 'sel') {
+                    res += event.type;
+                    $('#jag').html('Please Select the Value !!!');
+                    res += 'Please Select the Value !!!';
+                }
+                $('#jag').html(res);
+
+            });
+            //---on method use
+            //$('#btn').on('click mouseover', function (event) {
+            //    $('#jag').html(event.type);
+            //});
+            //--On Method Use with JSON Object
+            $('#btn').on('click', { firstname: "jagdish", Lastname: "Tooprani" }, say);
+
+            function say(event) {
+                debugger;
+                alert('Hello!!' + event.data.firstname);
+            };
+
+            //$('#btn').click(function (event) {
+            //    $('#jag').html(event.type);
+            //});
+
+            //--Dynamically Create li when click on button
+            //$('#btncity').on('click', function () {
+            //    var New = '<li>New List</li>';
+            //    $('#newul').append(New);
+            //});
+            //$('#newul').on('click', 'li', function () {
+            //    $(this).fadeOut(500);
+            //});
+            
+            
+            //--Right Click Disable
+            $(this).on('contextmenu', function (e)
+            {
+                e.preventDefault();
+            });
+
+                
+        });
+    </script>
+    <style>
+        .jag_class {
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <ul id="newul">
+        <li>INDIA</li>
+        <li>PAKISTAN</li>
+        <li>AUS</li>
+        <li>USA</li>
+        <li>UK</li>
+    </ul>
+    <input type="button" value="Add New List" id="btncity" />
+    <select id="ddl">
+        <option name="City" value="sel">SELECT</option>
+        <option name="City" value="sec">SECUNDERABAD</option>
+        <option name="City" value="mum">MUMBAI</option>
+        <option name="City" value="del">DELHI</option>
+        <option name="City" value="mah">MAHARASTRA</option>
+    </select>
+    <input type="button" value="SUBMIT" id="btn" />
+    <div id="jag" class="jag_class" style="border:1px solid blue">
+
+    </div>
+</body>
+</html>

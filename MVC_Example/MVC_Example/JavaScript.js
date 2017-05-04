@@ -1,0 +1,9 @@
+﻿jagdish = {
+    jaggu:function()
+    {
+    },
+    sai: {
+        
+    },
+
+};

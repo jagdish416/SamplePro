@@ -1,0 +1,24 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+   <table border="1" style="width:800px;font-family:Arial" >
+       <tr style="background-color:burlywood">
+           <td colspan="2" style="text-align:center"><h3>Website</h3></td>
+       </tr>
+       <tr style="background-color:burlywood">
+           <td><h3>Menu</h3></td>
+           <td>@RenderBody()</td>
+       </tr>
+       <tr style="background-color:burlywood">
+           <td><h3>Footer</h3></td>
+       </tr>
+   </table>
+</body>
+</html>

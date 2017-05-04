@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@*<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>*@
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<html>
+<head>
+    <title>The jQuery Example</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            debugger;   
+            var result='';
+            $('li').each(function (index,element) {
+                result += 'Index =' + index + 'value =' + $(element).text()+'<br/>';
+            });
+            $('div').html(result);
+            //$("test").click(function () {
+            //    alert("Jquery Test World !!");
+            //});
+            //function scope() {
+            //    console.log(this, arguments.length);
+            //}
+            //scope();
+            //scope.call("foobar", [1, 2]);
+            //scope.apply("foobar", [1, 2]);
+            //$("#Jagdish").click(
+
+            //function () {
+            //    var _a = "CallHealth";
+            //    var _b="Welcomes You"
+            //    debugger;
+            //    console.log(_a.charAt(5));
+
+            //});
+        });
+        
+    </script>
+
+</head>
+
+<body>
+    @*<h1>Hello</h1>
+    <div id="test">
+        Click on this to see a dialogue boxx
+    </div>
+    <div id="Jagdish">
+        Jagdish Click Here
+    </div>*@
+    <ul>
+        <li>INDIA</li>
+        <li>PAKISTAN</li>
+        <li>AUS</li>
+        <li>USA</li>
+        <li>UK</li>
+    </ul>
+    <div id="div">
+
+    </div>
+</body>
+
+</html>
+<h2>Index</h2>
+

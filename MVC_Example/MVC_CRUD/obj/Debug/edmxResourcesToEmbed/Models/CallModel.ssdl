@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Jag_SampleDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Jag_SampleDB.dbo.Emp_Details' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Emp_Details">
+    <Key>
+      <PropertyRef Name="AutoEmp_id" />
+    </Key>
+    <Property Name="AutoEmp_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Emp_id" Type="int" />
+    <Property Name="Emp_Name" Type="varchar" MaxLength="500" />
+    <Property Name="Gender" Type="varchar" MaxLength="500" />
+    <Property Name="Age" Type="int" />
+    <Property Name="Address1" Type="varchar(max)" />
+    <Property Name="Country" Type="varchar(max)" />
+    <Property Name="Phone_No" Type="bigint" />
+    <Property Name="Intrested" Type="varchar" MaxLength="400" />
+  </EntityType>
+  <EntityContainer Name="Jag_SampleDBModelStoreContainer">
+    <EntitySet Name="Emp_Details" EntityType="Self.Emp_Details" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Emp_Details].[AutoEmp_id] AS [AutoEmp_id], 
+    [Emp_Details].[Emp_id] AS [Emp_id], 
+    [Emp_Details].[Emp_Name] AS [Emp_Name], 
+    [Emp_Details].[Gender] AS [Gender], 
+    [Emp_Details].[Age] AS [Age], 
+    [Emp_Details].[Address1] AS [Address1], 
+    [Emp_Details].[Country] AS [Country], 
+    [Emp_Details].[Phone_No] AS [Phone_No], 
+    [Emp_Details].[Intrested] AS [Intrested]
+    FROM [dbo].[Emp_Details] AS [Emp_Details]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

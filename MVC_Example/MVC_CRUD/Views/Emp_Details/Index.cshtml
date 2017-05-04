@@ -1,0 +1,83 @@
+﻿@model IEnumerable<MVC_CRUD.Models.Emp_Details>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Emp_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Emp_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Intrested)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emp_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emp_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone_No)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Intrested)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.AutoEmp_id }) |
+                @Html.ActionLink("Details", "Details", new { id=item.AutoEmp_id }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.AutoEmp_id })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

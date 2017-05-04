@@ -1,0 +1,6 @@
+F:\Practice Projects\MVC_Example\LINQ\bin\Debug\LINQ.exe.config
+F:\Practice Projects\MVC_Example\LINQ\bin\Debug\LINQ.exe
+F:\Practice Projects\MVC_Example\LINQ\bin\Debug\LINQ.pdb
+F:\Practice Projects\MVC_Example\LINQ\obj\Debug\LINQ.csprojResolveAssemblyReference.cache
+F:\Practice Projects\MVC_Example\LINQ\obj\Debug\LINQ.exe
+F:\Practice Projects\MVC_Example\LINQ\obj\Debug\LINQ.pdb

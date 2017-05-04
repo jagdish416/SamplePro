@@ -1,0 +1,5 @@
+F:\Practice Projects\MVC_Example\Interface\bin\Debug\Interface.exe.config
+F:\Practice Projects\MVC_Example\Interface\bin\Debug\Interface.exe
+F:\Practice Projects\MVC_Example\Interface\bin\Debug\Interface.pdb
+F:\Practice Projects\MVC_Example\Interface\obj\Debug\Interface.exe
+F:\Practice Projects\MVC_Example\Interface\obj\Debug\Interface.pdb

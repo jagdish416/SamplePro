@@ -1,0 +1,44 @@
+﻿
+@model MVC_Example.Models.GetCountry
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <div> 
+        @Html.DropDownListFor(p=>p.Country_Id,Model.getlist,"--Select--",new { @id="ddl"})
+        @*@Html.DropDownListFor(p => p.State_Id, Model.getstatelist, "--Select--", new { @id = "ddlstate" })*@
+       
+    </div>
+</body>
+</html>
+
+@*<script type="text/javascript">
+    $('#ddl').change(function () {
+        debugger;
+             var idval= $('#ddl :selected').val();
+        $.ajax({
+            url: '@Url.Action("Display","DisplayCountry_List")',
+            data: { id: idval },
+            type: "Get",
+            contentType: "json",
+            success: function (data) {
+                $.each($.parseJSON(data), function (i, item) { $("#ddlstate").append($('<option></option>').val(item.state_id).html(item.state_name)); });
+              
+            },
+            error: function () {
+                alert("An error has occured!!!");
+            }
+
+        });
+    });
+
+</script>*@

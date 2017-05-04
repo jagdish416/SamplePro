@@ -1,0 +1,6 @@
+F:\Practice Projects\MVC_Example\Abstract\bin\Debug\Abstract.exe.config
+F:\Practice Projects\MVC_Example\Abstract\bin\Debug\Abstract.exe
+F:\Practice Projects\MVC_Example\Abstract\bin\Debug\Abstract.pdb
+F:\Practice Projects\MVC_Example\Abstract\obj\Debug\Abstract.csprojResolveAssemblyReference.cache
+F:\Practice Projects\MVC_Example\Abstract\obj\Debug\Abstract.exe
+F:\Practice Projects\MVC_Example\Abstract\obj\Debug\Abstract.pdb

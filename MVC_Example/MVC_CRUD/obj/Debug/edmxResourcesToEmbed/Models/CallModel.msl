@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Jag_SampleDBModelStoreContainer" CdmEntityContainer="Jag_SampleDBEntities">
+    <EntitySetMapping Name="Emp_Details">
+      <EntityTypeMapping TypeName="Jag_SampleDBModel.Emp_Details">
+        <MappingFragment StoreEntitySet="Emp_Details">
+          <ScalarProperty Name="AutoEmp_id" ColumnName="AutoEmp_id" />
+          <ScalarProperty Name="Emp_id" ColumnName="Emp_id" />
+          <ScalarProperty Name="Emp_Name" ColumnName="Emp_Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Phone_No" ColumnName="Phone_No" />
+          <ScalarProperty Name="Intrested" ColumnName="Intrested" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

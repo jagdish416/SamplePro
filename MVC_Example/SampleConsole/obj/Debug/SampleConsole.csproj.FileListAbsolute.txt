@@ -1,0 +1,6 @@
+F:\Practice Projects\MVC_Example\SampleConsole\bin\Debug\SampleConsole.exe.config
+F:\Practice Projects\MVC_Example\SampleConsole\bin\Debug\SampleConsole.exe
+F:\Practice Projects\MVC_Example\SampleConsole\obj\Debug\SampleConsole.exe
+F:\Practice Projects\MVC_Example\SampleConsole\obj\Debug\SampleConsole.pdb
+F:\Practice Projects\MVC_Example\SampleConsole\bin\Debug\SampleConsole.pdb
+F:\Practice Projects\MVC_Example\SampleConsole\obj\Debug\SampleConsole.csprojResolveAssemblyReference.cache

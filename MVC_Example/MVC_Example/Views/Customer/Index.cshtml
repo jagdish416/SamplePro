@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CUSTOMER</title>
+</head>
+<body>
+    <b>CUSTOMER DATA</b>
+   <form id="çusform" method="post" action="~/Controllers/Customer/Index">
+       CustomerName: <input id="CusName" type="text" />
+       CustomerAge :<input id="CusAge" type="text" />
+       <br />
+       <input type="button"  value="SUBMIT" />
+       @Html.ActionLink("ClickHere", "Index", "DisplayCountry_List")
+     @ViewData["Ja"]
+       @ViewBag.aa
+       @ViewData["khjkhkj"]
+       @ViewBag.Vistors
+   </form>
+</body>
+</html>
